@@ -1,13 +1,13 @@
 import bcryptjs from 'bcryptjs';
-import Usuario from '../users/user.model.js'
+import Usuario from '../users/user.model.js';
 import { generarJWT } from '../helpers/generate-jwt.js'; 
 
 export const login = async (req, res) => {
-    const { correo, password } = req.body;
+    const { email, password } = req.body;
 
   try {
 
-    const usuario = await Usuario.findOne({ correo });
+    const usuario = await Usuario.findOne({ email });
 
     if (!usuario) {
       return res.status(400).json({
@@ -15,7 +15,7 @@ export const login = async (req, res) => {
       });
     }
 
-    if (!usuario.estado) {
+    if (!usuario.state) {
       return res.status(400).json({
         msg: "The user does not exist in the database",
       });
