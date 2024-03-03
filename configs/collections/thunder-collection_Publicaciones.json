@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Publicaciones",
+    "dateExported": "2024-03-02T23:05:49.798Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7807655e-af62-4170-9842-c2abe33e439e",
+            "colId": "e87e12dc-f83f-4fbc-b61c-16565899b9d9",
+            "containerId": "",
+            "name": "publicacionesPost",
+            "url": "http://localhost:3000/opinionManagerApi/v1/publications",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T21:31:10.119Z",
+            "modified": "2024-03-02T22:40:21.925Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYWE4M2JiYzA0MjAyMzM0MDNhMGQiLCJpYXQiOjE3MDk0MTkxNzYsImV4cCI6MTcxMjAxMTE3Nn0.XjhPMjtFPZBdMzd5x7rqLtUEVESnkWbfuR-LpIwYYIA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Publications 100\",\n  \"category\": \"First category\",\n  \"text\": \"This is the first publication\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae8dcdc4-11da-4829-9312-8ce4df3e5de0",
+            "colId": "e87e12dc-f83f-4fbc-b61c-16565899b9d9",
+            "containerId": "",
+            "name": "publicacionesPut",
+            "url": "http://localhost:3000/opinionManagerApi/v1/publications/65e3aad5bbc0420233403a16",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-03-02T21:31:10.120Z",
+            "modified": "2024-03-02T22:41:01.787Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYWE4M2JiYzA0MjAyMzM0MDNhMGQiLCJpYXQiOjE3MDk0MTkxNzYsImV4cCI6MTcxMjAxMTE3Nn0.XjhPMjtFPZBdMzd5x7rqLtUEVESnkWbfuR-LpIwYYIA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Publications 2\",\n  \"category\": \"First category\",\n  \"text\": \"This is the second publication\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "123df7ef-bfad-4cfb-ad13-911d5292a9c7",
+            "colId": "e87e12dc-f83f-4fbc-b61c-16565899b9d9",
+            "containerId": "",
+            "name": "publicacionesDelete",
+            "url": "http://localhost:3000/opinionManagerApi/v1/publications/65e3aad5bbc0420233403a16",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-02T21:31:10.121Z",
+            "modified": "2024-03-02T22:41:36.296Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYWE4M2JiYzA0MjAyMzM0MDNhMGQiLCJpYXQiOjE3MDk0MTkxNzYsImV4cCI6MTcxMjAxMTE3Nn0.XjhPMjtFPZBdMzd5x7rqLtUEVESnkWbfuR-LpIwYYIA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Comentarios",
+    "dateExported": "2024-03-02T23:05:59.355Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "14359aee-4cf7-44f7-9e56-5a534fe7c9c9",
+            "colId": "a9483e9f-1aa5-4051-b941-3a2825304828",
+            "containerId": "",
+            "name": "comentariosPost",
+            "url": "http://localhost:3000/opinionManagerApi/v1/comments",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T22:44:05.128Z",
+            "modified": "2024-03-02T22:49:10.878Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYWE4M2JiYzA0MjAyMzM0MDNhMGQiLCJpYXQiOjE3MDk0MTkxNzYsImV4cCI6MTcxMjAxMTE3Nn0.XjhPMjtFPZBdMzd5x7rqLtUEVESnkWbfuR-LpIwYYIA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"publicationId\":\"65e3aac2bbc0420233403a12\",\n  \"title\": \"Second Comment\",\n  \"comments\": \"This is my second comment\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e3ae15c-73c0-4b76-bd3e-6faf836a525b",
+            "colId": "a9483e9f-1aa5-4051-b941-3a2825304828",
+            "containerId": "",
+            "name": "comentariosPut",
+            "url": "http://localhost:3000/opinionManagerApi/v1/comments/65e3ace61bb9a2e95e97af04",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-02T22:44:05.130Z",
+            "modified": "2024-03-02T22:50:26.179Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYWE4M2JiYzA0MjAyMzM0MDNhMGQiLCJpYXQiOjE3MDk0MTkxNzYsImV4cCI6MTcxMjAxMTE3Nn0.XjhPMjtFPZBdMzd5x7rqLtUEVESnkWbfuR-LpIwYYIA"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"First\",\n  \"comments\":\"Edited comment\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "336e943b-14d1-4209-9f87-e1591bbdf972",
+            "colId": "a9483e9f-1aa5-4051-b941-3a2825304828",
+            "containerId": "",
+            "name": "comentariosDelete",
+            "url": "http://localhost:3000/opinionManagerApi/v1/comments/65e3addc086aefb1e91b28df",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-02T22:44:05.131Z",
+            "modified": "2024-03-02T23:04:41.649Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzYWE4M2JiYzA0MjAyMzM0MDNhMGQiLCJpYXQiOjE3MDk0MTkxNzYsImV4cCI6MTcxMjAxMTE3Nn0.XjhPMjtFPZBdMzd5x7rqLtUEVESnkWbfuR-LpIwYYIA"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
